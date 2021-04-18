@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -12,6 +13,13 @@ export default function Home() {
         <h1 className="title">
           Ramesh Krishna to <a href="https://nextjs.org">Next.js!</a>
         </h1>
+        <h1 className="title">
+        Read{' '}
+        <Link href="/posts/first-post">
+        <a>this page!</a>
+        </Link>
+        </h1>
+
 
         <p className="description">
           Trying Next JS for the first time by following tutorial
